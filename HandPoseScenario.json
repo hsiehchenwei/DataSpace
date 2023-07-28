@@ -24,5 +24,17 @@
                 "param": "Object2"
             }
         ]
+    },{
+        "time": 15.0,
+        "actions": [
+            {
+                "actionType": "playSound",
+                "param": "Sound3"
+            },
+            {
+                "actionType": "toggleObject",
+                "param": "Object3"
+            }
+        ]
     }
 ]
