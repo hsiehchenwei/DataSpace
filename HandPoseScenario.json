@@ -1,0 +1,28 @@
+[
+    {
+        "time": 5.0,
+        "actions": [
+            {
+                "actionType": "playSound",
+                "param": "Sound1"
+            },
+            {
+                "actionType": "toggleObject",
+                "param": "Object1"
+            }
+        ]
+    },
+    {
+        "time": 10.0,
+        "actions": [
+            {
+                "actionType": "playSound",
+                "param": "Sound2"
+            },
+            {
+                "actionType": "toggleObject",
+                "param": "Object2"
+            }
+        ]
+    }
+]
