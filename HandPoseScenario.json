@@ -4,7 +4,7 @@
         "actions": [
             {
                 "actionType": "playSound",
-                "param": "Sound1"
+                "param": "Bolero_A_Intro"
             },
             {
                 "actionType": "toggleObject",
@@ -17,7 +17,7 @@
         "actions": [
             {
                 "actionType": "playSound",
-                "param": "Sound2"
+                "param": "Bolero_A_plus"
             },
             {
                 "actionType": "toggleObject",
@@ -29,7 +29,7 @@
         "actions": [
             {
                 "actionType": "playSound",
-                "param": "Sound3"
+                "param": "Bolero_Loop"
             },
             {
                 "actionType": "toggleObject",
