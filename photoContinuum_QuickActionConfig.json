@@ -11,14 +11,14 @@
                 {
                     "id": "angle_left",
                     "name": "左旋轉 ",
-                    "prompt": "畫面場景都不要動, 但是相機向左搖攝(pan)，從左側角度捕捉",
+                    "prompt": "畫面場景都不要動, 但是相機向左搖攝(pan)",
                     "icon": "↪️",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_right",
                     "name": "右旋轉 ",
-                    "prompt": "畫面場景都不要動, 但是相機向右搖攝(pan)，從右側角度捕捉",
+                    "prompt": "畫面場景都不要動, 但是相機向右搖攝(pan)",
                     "icon": "↩️",
                     "category_id": "angle"
                 },
