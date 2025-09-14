@@ -1,0 +1,320 @@
+{
+    "version": "1.0.0",
+    "last_updated": "2024-01-15T10:30:00Z",
+    "categories": [
+        {
+            "id": "angle",
+            "name": "視角",
+            "icon": "🎥",
+            "color": "blue",
+            "commands": [
+                {
+                    "id": "angle_left",
+                    "name": "左旋",
+                    "prompt": "相機向左移動拍攝，從左側角度捕捉",
+                    "icon": "↪️",
+                    "category_id": "angle"
+                },
+                {
+                    "id": "angle_right",
+                    "name": "右旋",
+                    "prompt": "相機向右移動拍攝，從右側角度捕捉",
+                    "icon": "↩️",
+                    "category_id": "angle"
+                },
+                {
+                    "id": "angle_closeup",
+                    "name": "靠近特寫",
+                    "prompt": "拍攝特寫，焦點在臉部，近距離拍攝",
+                    "icon": "🔍",
+                    "category_id": "angle"
+                },
+                {
+                    "id": "angle_fullbody",
+                    "name": "遠離全身",
+                    "prompt": "拍攝全身，展現整體造型和姿態",
+                    "icon": "🔎",
+                    "category_id": "angle"
+                },
+                {
+                    "id": "angle_topdown",
+                    "name": "俯視角度",
+                    "prompt": "從上方角度俯視拍攝，高角度視角",
+                    "icon": "⬇️",
+                    "category_id": "angle"
+                },
+                {
+                    "id": "angle_bottomup",
+                    "name": "仰視角度",
+                    "prompt": "從下方角度仰視拍攝，低角度視角",
+                    "icon": "⬆️",
+                    "category_id": "angle"
+                },
+                {
+                    "id": "angle_sideprofile",
+                    "name": "側面輪廓",
+                    "prompt": "側面輪廓拍攝，展現側臉線條",
+                    "icon": "📐",
+                    "category_id": "angle"
+                },
+                {
+                    "id": "angle_backview",
+                    "name": "背面拍攝",
+                    "prompt": "從背後拍攝，展現背影和輪廓，神秘感十足",
+                    "icon": "🔄",
+                    "category_id": "angle"
+                }
+            ]
+        },
+        {
+            "id": "expression",
+            "name": "表情",
+            "icon": "😊",
+            "color": "orange",
+            "commands": [
+                {
+                    "id": "expr_smile",
+                    "name": "自然微笑",
+                    "prompt": "自然溫暖的微笑，親和力十足",
+                    "icon": "😄",
+                    "category_id": "expression"
+                },
+                {
+                    "id": "expr_laugh",
+                    "name": "開懷大笑",
+                    "prompt": "開懷大笑，充滿活力和喜悦",
+                    "icon": "😆",
+                    "category_id": "expression"
+                },
+                {
+                    "id": "expr_thoughtful",
+                    "name": "若有所思",
+                    "prompt": "若有所思的表情，深沉內斂",
+                    "icon": "🤔",
+                    "category_id": "expression"
+                },
+                {
+                    "id": "expr_calm",
+                    "name": "平靜放鬆",
+                    "prompt": "平靜放鬆的神情，安詳自在",
+                    "icon": "😌",
+                    "category_id": "expression"
+                },
+                {
+                    "id": "expr_excited",
+                    "name": "驚喜興奮",
+                    "prompt": "驚喜或興奮的表情，眼中有光",
+                    "icon": "😮",
+                    "category_id": "expression"
+                },
+                {
+                    "id": "expr_confident",
+                    "name": "自信迷人",
+                    "prompt": "自信迷人的眼神，魅力四射",
+                    "icon": "😏",
+                    "category_id": "expression"
+                },
+                {
+                    "id": "expr_professional",
+                    "name": "專業認真",
+                    "prompt": "專業認真的神情，專注嚴肅",
+                    "icon": "🧐",
+                    "category_id": "expression"
+                }
+            ]
+        },
+        {
+            "id": "pose",
+            "name": "姿勢",
+            "icon": "🤸",
+            "color": "purple",
+            "commands": [
+                {
+                    "id": "pose_handup",
+                    "name": "自然舉手",
+                    "prompt": "一隻手自然舉起，輕鬆隨意",
+                    "icon": "🙋",
+                    "category_id": "pose"
+                },
+                {
+                    "id": "pose_armsopen",
+                    "name": "張開雙臂",
+                    "prompt": "雙臂自然張開，展現開放姿態",
+                    "icon": "🤗",
+                    "category_id": "pose"
+                },
+                {
+                    "id": "pose_facehold",
+                    "name": "雙手捧臉",
+                    "prompt": "雙手輕撫臉頰，溫柔動人",
+                    "icon": "🤲",
+                    "category_id": "pose"
+                },
+                {
+                    "id": "pose_sideelegant",
+                    "name": "優雅側身",
+                    "prompt": "身體轉向側面，展現優雅線條",
+                    "icon": "👤",
+                    "category_id": "pose"
+                },
+                {
+                    "id": "pose_sitting",
+                    "name": "坐姿拍攝",
+                    "prompt": "坐著的姿勢，放鬆自然",
+                    "icon": "🪑",
+                    "category_id": "pose"
+                },
+                {
+                    "id": "pose_standing",
+                    "name": "站姿挺拔",
+                    "prompt": "自然站立姿態，挺拔自信",
+                    "icon": "🚶",
+                    "category_id": "pose"
+                }
+            ]
+        },
+        {
+            "id": "environment",
+            "name": "環境",
+            "icon": "🌅",
+            "color": "green",
+            "commands": [
+                {
+                    "id": "env_urban",
+                    "name": "現代都市",
+                    "prompt": "在現代都市背景中，城市氛圍",
+                    "icon": "🏢",
+                    "category_id": "environment"
+                },
+                {
+                    "id": "env_nature",
+                    "name": "自然綠意",
+                    "prompt": "在自然綠意環境中，清新自然",
+                    "icon": "🌳",
+                    "category_id": "environment"
+                },
+                {
+                    "id": "env_beach",
+                    "name": "海邊沙灘",
+                    "prompt": "在海邊或沙灘上，海洋風情",
+                    "icon": "🏖️",
+                    "category_id": "environment"
+                },
+                {
+                    "id": "env_cafe",
+                    "name": "溫馨咖啡廳",
+                    "prompt": "在溫馨的咖啡廳裡，休閒愜意",
+                    "icon": "☕",
+                    "category_id": "environment"
+                },
+                {
+                    "id": "env_studio",
+                    "name": "專業工作室",
+                    "prompt": "在專業攝影棚中，純淨背景",
+                    "icon": "🎭",
+                    "category_id": "environment"
+                },
+                {
+                    "id": "env_home",
+                    "name": "舒適居家",
+                    "prompt": "在舒適的家中環境，溫暖親近",
+                    "icon": "🏠",
+                    "category_id": "environment"
+                },
+                {
+                    "id": "env_nightcity",
+                    "name": "夜晚燈光",
+                    "prompt": "在夜晚城市燈光下，浪漫氛圍",
+                    "icon": "🌃",
+                    "category_id": "environment"
+                }
+            ]
+        },
+        {
+            "id": "lighting",
+            "name": "光影",
+            "icon": "💡",
+            "color": "yellow",
+            "commands": [
+                {
+                    "id": "light_natural",
+                    "name": "柔和自然光",
+                    "prompt": "柔和的自然日光，溫暖明亮",
+                    "icon": "☀️",
+                    "category_id": "lighting"
+                },
+                {
+                    "id": "light_studio",
+                    "name": "專業棚光",
+                    "prompt": "專業攝影棚燈光，均勻明亮",
+                    "icon": "💡",
+                    "category_id": "lighting"
+                },
+                {
+                    "id": "light_moonlight",
+                    "name": "浪漫月光",
+                    "prompt": "浪漫的月光照射，神秘夜色",
+                    "icon": "🌙",
+                    "category_id": "lighting"
+                },
+                {
+                    "id": "light_dramatic",
+                    "name": "戲劇光影",
+                    "prompt": "強烈對比的戲劇光線，光影分明",
+                    "icon": "⚡",
+                    "category_id": "lighting"
+                },
+                {
+                    "id": "light_candle",
+                    "name": "溫馨燭光",
+                    "prompt": "溫馨柔和的燭光，暖色調",
+                    "icon": "🕯️",
+                    "category_id": "lighting"
+                }
+            ]
+        },
+        {
+            "id": "style",
+            "name": "風格",
+            "icon": "🎨",
+            "color": "pink",
+            "commands": [
+                {
+                    "id": "style_vintage",
+                    "name": "復古膠片",
+                    "prompt": "復古膠片感，懷舊色調",
+                    "icon": "🎞️",
+                    "category_id": "style"
+                },
+                {
+                    "id": "style_blackwhite",
+                    "name": "經典黑白",
+                    "prompt": "經典黑白照片，純淨對比",
+                    "icon": "⚫",
+                    "category_id": "style"
+                },
+                {
+                    "id": "style_vibrant",
+                    "name": "鮮豔飽和",
+                    "prompt": "色彩飽和鮮明，活力四射",
+                    "icon": "🌈",
+                    "category_id": "style"
+                },
+                {
+                    "id": "style_business",
+                    "name": "商務專業",
+                    "prompt": "專業商務風格，正式嚴謹",
+                    "icon": "💼",
+                    "category_id": "style"
+                },
+                {
+                    "id": "style_fashion",
+                    "name": "時尚雜誌",
+                    "prompt": "時尚雜誌封面照風格",
+                    "icon": "👗",
+                    "category_id": "style"
+                }
+            ]
+        }
+    ]
+}
