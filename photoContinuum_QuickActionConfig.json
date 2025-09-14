@@ -23,13 +23,6 @@
                     "category_id": "angle"
                 },
                 {
-                    "id": "angle_forward",
-                    "name": "往前一步",
-                    "prompt": "畫面場景都不要動, 往前一步靠近拍攝",
-                    "icon": "📐",
-                    "category_id": "angle"
-                },
-                {
                     "id": "angle_closeup",
                     "name": "特寫鏡頭",
                     "prompt": "畫面場景都不要動, 拍攝特寫鏡頭(close-up)，焦點在臉部，近距離拍攝",
@@ -40,13 +33,6 @@
                     "id": "angle_fullbody",
                     "name": "全身鏡頭",
                     "prompt": "畫面場景都不要動, 拍攝全身鏡頭(full shot)",
-                    "icon": "🔎",
-                    "category_id": "angle"
-                },
-                {
-                    "id": "angle_halfbody",
-                    "name": "半身鏡頭",
-                    "prompt": "畫面場景都不要動, 拍攝半身鏡頭(half body shot)",
                     "icon": "🔎",
                     "category_id": "angle"
                 },
@@ -69,6 +55,13 @@
                     "name": "背面鏡頭",
                     "prompt": "畫面場景都不要動, 從背後拍攝(back shot)",
                     "icon": "🔄",
+                    "category_id": "angle"
+                },
+                {
+                    "id": "angle_fly",
+                    "name": "空拍鏡頭",
+                    "prompt": "畫面場景都不要動, 模擬無人機由上往下拍攝",
+                    "icon": "🚁",
                     "category_id": "angle"
                 }
             ]
