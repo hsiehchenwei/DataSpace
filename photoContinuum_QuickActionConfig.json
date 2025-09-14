@@ -11,56 +11,56 @@
                 {
                     "id": "angle_left",
                     "name": "左旋轉 ",
-                    "prompt": "畫面場景都不要動, 但是攝影鏡頭對著場景中心向左旋轉45度",
+                    "prompt": "畫面場景和人物都不要動, 但是攝影鏡頭對著場景中心向左旋轉45度",
                     "icon": "↪️",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_right",
                     "name": "右旋轉 ",
-                    "prompt": "畫面場景都不要動, 但是攝影鏡頭對著場景中心向右旋轉45度",
+                    "prompt": "畫面場景和人物都不要動, 但是攝影鏡頭對著場景中心向右旋轉45度",
                     "icon": "↩️",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_closeup",
                     "name": "特寫鏡頭",
-                    "prompt": "畫面場景都不要動, 拍攝特寫鏡頭(close-up)，焦點在臉部，近距離拍攝",
+                    "prompt": "畫面場景和人物都不要動, 拍攝特寫鏡頭(close-up)，焦點在臉部，近距離拍攝",
                     "icon": "🔍",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_fullbody",
                     "name": "全身鏡頭",
-                    "prompt": "畫面場景都不要動, 拍攝全身鏡頭(full shot)",
+                    "prompt": "畫面場景和人物都不要動, 拍攝全身鏡頭(full shot)",
                     "icon": "🔎",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_topdown",
                     "name": "俯視鏡頭",
-                    "prompt": "畫面場景都不要動, 從上方角度俯視拍攝(high angle shot)，高角度視角",
+                    "prompt": "畫面場景和人物都不要動, 從上方角度俯視拍攝(high angle shot)，高角度視角",
                     "icon": "⬇️",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_bottomup",
                     "name": "仰視鏡頭",
-                    "prompt": "畫面場景都不要動, 從下方角度仰視拍攝(low angle shot)，低角度視角",
+                    "prompt": "畫面場景和人物都不要動, 從下方角度仰視拍攝(low angle shot)，低角度視角",
                     "icon": "⬆️",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_backview",
                     "name": "背面鏡頭",
-                    "prompt": "畫面場景都不要動, 從背後拍攝(back shot)",
+                    "prompt": "畫面場景和人物都不要動, 從背後拍攝(back shot)",
                     "icon": "🔄",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_fly",
                     "name": "空拍鏡頭",
-                    "prompt": "畫面場景都不要動, 模擬無人機由上往下拍攝",
+                    "prompt": "畫面場景和人物都不要動, 模擬無人機由上往下拍攝",
                     "icon": "🚁",
                     "category_id": "angle"
                 }
@@ -87,38 +87,10 @@
                     "category_id": "expression"
                 },
                 {
-                    "id": "expr_thoughtful",
-                    "name": "若有所思",
-                    "prompt": "若有所思的表情，深沉內斂",
-                    "icon": "🤔",
-                    "category_id": "expression"
-                },
-                {
-                    "id": "expr_calm",
-                    "name": "平靜放鬆",
-                    "prompt": "平靜放鬆的神情，安詳自在",
-                    "icon": "😌",
-                    "category_id": "expression"
-                },
-                {
-                    "id": "expr_excited",
-                    "name": "驚喜興奮",
-                    "prompt": "驚喜或興奮的表情，眼中有光",
-                    "icon": "😮",
-                    "category_id": "expression"
-                },
-                {
                     "id": "expr_confident",
-                    "name": "自信迷人",
-                    "prompt": "自信迷人的眼神，魅力四射",
+                    "name": "迷人",
+                    "prompt": "挑逗誘惑的表情，勾引攝影師",
                     "icon": "😏",
-                    "category_id": "expression"
-                },
-                {
-                    "id": "expr_professional",
-                    "name": "專業認真",
-                    "prompt": "專業認真的神情，專注嚴肅",
-                    "icon": "🧐",
                     "category_id": "expression"
                 }
             ]
@@ -162,13 +134,6 @@
                     "name": "比愛心",
                     "prompt": "雙手比出愛心手勢，表達愛意",
                     "icon": "💕",
-                    "category_id": "pose"
-                },
-                {
-                    "id": "pose_kissing",
-                    "name": "接吻表情",
-                    "prompt": "做出接吻的表情，嘴唇微嘟，眼神溫柔",
-                    "icon": "💋",
                     "category_id": "pose"
                 },
                 {
@@ -222,13 +187,6 @@
                     "category_id": "environment"
                 },
                 {
-                    "id": "env_studio",
-                    "name": "專業工作室",
-                    "prompt": "拍攝主體不變,場景換成專業攝影棚中，純淨背景",
-                    "icon": "🎭",
-                    "category_id": "environment"
-                },
-                {
                     "id": "weather_rainy",
                     "name": "雨天",
                     "prompt": "場景不變，天氣變成雨天，增加雨滴效果和濕潤感",
@@ -276,6 +234,13 @@
                     "name": "鮮豔",
                     "prompt": "場景和人物都不變, 調整色彩飽和度，讓顏色更鮮豔或更柔和",
                     "icon": "🌈",
+                    "category_id": "adjustment"
+                },
+                {
+                    "id": "adj_remove_UI",
+                    "name": "移除文字",
+                    "prompt": "只留下照片",
+                    "icon": "🔍",
                     "category_id": "adjustment"
                 }
             ]
