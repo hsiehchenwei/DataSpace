@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoContinuum - AI Photo Continuation | Extend Precious Memories Infinitely</title>
+    <meta name="description" content="PhotoContinuum uses Google Gemini AI to extend your precious photos into infinite possibilities. Completely private and secure with local processing, no photo uploads. Perfect for commemorating departed loved ones and creating new beautiful memories.">
+    <meta name="keywords" content="AI photo editing, photo continuation, Google Gemini, AI image generation, photo creation, memory extension, pet photos, memorial photos, photo transformation, AI art, privacy secure, local processing">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="PhotoContinuum - AI Photo Continuation">
+    <meta property="og:description" content="Extend precious memories into infinite possibilities with AI">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./images/app-preview.jpg">
+
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/app-icon-180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+</head>
+<body class="loading">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">PhotoContinuum</a>
+                <div class="language-switch">
+                    <a href="index.html" data-lang="zh">中文</a>
+                    <a href="#" class="active" data-lang="en">English</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="app-icon">📸</div>
+                <h1>PhotoContinuum</h1>
+                <p class="subtitle">Extend Precious Memories Into Infinite Possibilities with AI</p>
+                <a href="#" class="download-button" onclick="trackDownload('hero')">
+                    <span>📱</span>
+                    Download on App Store
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Core Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3>AI Smart Continuation</h3>
+                    <p>Powered by Google Gemini's advanced AI model, create countless variations based on your creative descriptions while maintaining consistent character or pet features. Supports both voice and text input.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Complete Privacy & Security</h3>
+                    <p>All photo processing happens entirely on your local device. We never upload, store, or share any personal photos. Your precious memories remain completely under your control with the highest privacy protection standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>The app itself is completely free to download and use. Users provide their own Google Gemini API key and pay Google directly for AI model usage. No hidden fees or additional charges.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Elegant Design</h3>
+                    <p>Warm photo frame aesthetic design with minimalist operation flow focused on creation itself. Cream tones and earth color palette create a cozy atmosphere with intuitive drag-and-drop upload functionality.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💝</div>
+                    <h3>Emotional Value</h3>
+                    <p>Create new beautiful moments for departed loved ones, explore cute scenarios of pets in different settings. Let precious photos extend into infinite imagination space - every generated photo carries love and remembrance.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Simple to Use</h3>
+                    <p>Just five steps: upload photo, describe creativity, AI processing, compare results, save output. No complex setup required - anyone can easily use it to create beautiful memories immediately.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Use -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">How to Use</h2>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>Upload Photo</h3>
+                    <p>Select your precious photo. Supports JPEG, PNG, HEIC formats with drag-and-drop upload or click to select.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>Describe Creativity</h3>
+                    <p>Use voice or text to describe your creative ideas, tell AI what kind of new scenarios you want to see.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>AI Smart Processing</h3>
+                    <p>Google Gemini AI model analyzes your photo and description, intelligently generating continued new images.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h3>Compare Results</h3>
+                    <p>Original photo and AI-generated continued image displayed side by side, allowing you to clearly see the continuation effect.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">5</div>
+                    <h3>Save Results</h3>
+                    <p>One-click save satisfactory results to your photo album in high-quality PNG format, ready to share precious memories anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Protection -->
+    <section class="section">
+        <div class="container">
+            <div class="privacy-section">
+                <div class="privacy-icon">🛡️</div>
+                <h2>Privacy Protection Commitment</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.8;">Your privacy is our most valued core principle</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
+                    <div style="text-align: center; padding: 20px;">
+                        <h3 style="color: #6B5B47; margin-bottom: 15px;">Zero Data Collection</h3>
+                        <p>We do not collect, store, or process any personally identifiable information</p>
+                    </div>
+                    <div style="text-align: center; padding: 20px;">
+                        <h3 style="color: #6B5B47; margin-bottom: 15px;">Local Processing</h3>
+                        <p>All photos are processed only on your local device, never uploaded to our servers</p>
+                    </div>
+                    <div style="text-align: center; padding: 20px;">
+                        <h3 style="color: #6B5B47; margin-bottom: 15px;">Secure Storage</h3>
+                        <p>API keys are securely stored in your device's system keychain, fully protecting your privacy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Requirements -->
+    <section class="section" style="background: var(--white);">
+        <div class="container">
+            <h2 class="section-title">System Requirements</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px;">
+                <div style="text-align: center; padding: 30px; background: var(--primary-cream); border-radius: var(--border-radius);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">📱</div>
+                    <h3 style="color: var(--earth-brown); margin-bottom: 15px;">iOS Device</h3>
+                    <p>Requires iOS 15.0 or later<br>Compatible with iPhone and iPad</p>
+                </div>
+                <div style="text-align: center; padding: 30px; background: var(--primary-cream); border-radius: var(--border-radius);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🔑</div>
+                    <h3 style="color: var(--earth-brown); margin-bottom: 15px;">API Key</h3>
+                    <p>Requires Google Gemini API key<br>Free registration available</p>
+                </div>
+                <div style="text-align: center; padding: 30px; background: var(--primary-cream); border-radius: var(--border-radius);">
+                    <div style="font-size: 3rem; margin-bottom: 20px;">🌐</div>
+                    <h3 style="color: var(--earth-brown); margin-bottom: 15px;">Internet Connection</h3>
+                    <p>Requires stable internet connection<br>For AI model calls</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Setup Guide -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">API Key Setup Guide</h2>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <h3>Visit Google AI Studio</h3>
+                    <p>Go to aistudio.google.com and sign in with your Google account.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <h3>Create API Key</h3>
+                    <p>Create a new API key in the console, copy and securely save it.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <h3>Enter in App</h3>
+                    <p>Enter your API key in PhotoContinuum, and the system will store it securely.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">4</div>
+                    <h3>Start Creating</h3>
+                    <p>Setup complete! Now you can start enjoying the magic of AI photo continuation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" style="background: var(--light-gray);">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div style="display: grid; gap: 30px; margin-top: 60px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <div style="background: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                    <h3 style="color: var(--earth-brown); margin-bottom: 15px; font-family: var(--font-serif);">Why do I need to provide my own API key?</h3>
+                    <p>This ensures complete transparency and privacy protection. You directly control all AI processing costs and data flow. We cannot access any of your data or photos.</p>
+                </div>
+                <div style="background: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                    <h3 style="color: var(--earth-brown); margin-bottom: 15px; font-family: var(--font-serif);">Will my photos be stored in the cloud?</h3>
+                    <p>Absolutely not. All photo processing happens entirely on your local device. We cannot access any of your photos. Your privacy and data security are our highest priority.</p>
+                </div>
+                <div style="background: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                    <h3 style="color: var(--earth-brown); margin-bottom: 15px; font-family: var(--font-serif);">How are usage costs calculated?</h3>
+                    <p>The app is completely free. You only pay Google directly for AI model usage, typically $0.01-0.05 per processing - very economical and affordable.</p>
+                </div>
+                <div style="background: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
+                    <h3 style="color: var(--earth-brown); margin-bottom: 15px; font-family: var(--font-serif);">What image formats are supported?</h3>
+                    <p>Supports common formats including JPEG, PNG, HEIC. The app automatically optimizes image size and quality to ensure the best AI processing results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="section">
+        <div class="container" style="text-align: center;">
+            <h2 class="section-title">Start Your Memory Continuation Journey Now</h2>
+            <p style="font-size: 1.3rem; margin-bottom: 40px; opacity: 0.8;">Let PhotoContinuum accompany you in extending every precious memory into eternal beautiful moments</p>
+            <a href="#" class="download-button pulse" onclick="trackDownload('footer')" style="font-size: 1.2rem; padding: 18px 35px;">
+                <span style="font-size: 1.5rem;">📱</span>
+                Download PhotoContinuum for Free
+            </a>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.6;">Compatible with iOS 15.0 or later</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PhotoContinuum</h3>
+                    <p style="opacity: 0.8; line-height: 1.8;">Extend precious memories into infinite possibilities with AI. Designed for those who cherish memories, letting every photo be filled with unlimited imagination space.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Product Features</h3>
+                    <ul>
+                        <li><a href="#features">AI Smart Continuation</a></li>
+                        <li><a href="#privacy">Privacy Protection</a></li>
+                        <li><a href="#pricing">Transparent Pricing</a></li>
+                        <li><a href="#design">Elegant Design</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support Resources</h3>
+                    <ul>
+                        <li><a href="#setup">API Setup Guide</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#requirements">System Requirements</a></li>
+                        <li><a href="#contact">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Language Versions</h3>
+                    <ul>
+                        <li><a href="index.html">繁體中文</a></li>
+                        <li><a href="index-en.html" class="active">English</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 PhotoContinuum. Extend precious memories into infinite possibilities.</p>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Privacy First • AI Powered • Made with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- Google Analytics (Replace with actual tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID');
+    </script>
+</body>
+</html>
