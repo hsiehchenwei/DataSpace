@@ -4,63 +4,63 @@
     "categories": [
         {
             "id": "angle",
-            "name": "視角",
+            "name": "Angle",
             "icon": "🎥",
             "color": "blue",
             "commands": [
                 {
                     "id": "angle_left",
-                    "name": "左旋轉 ",
-                    "prompt": "畫面場景和人物都不要動, 但是攝影鏡頭對著場景中心向左旋轉45度",
+                    "name": "Rotate Left",
+                    "prompt": "Keep the scene and characters unchanged, but rotate the camera 45 degrees to the left around the scene center",
                     "icon": "↪️",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_right",
-                    "name": "右旋轉 ",
-                    "prompt": "畫面場景和人物都不要動, 但是攝影鏡頭對著場景中心向右旋轉45度",
+                    "name": "Rotate Right",
+                    "prompt": "Keep the scene and characters unchanged, but rotate the camera 45 degrees to the right around the scene center",
                     "icon": "↩️",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_closeup",
-                    "name": "特寫鏡頭",
-                    "prompt": "畫面場景和人物都不要動, 拍攝特寫鏡頭(close-up)，焦點在臉部，近距離拍攝",
+                    "name": "Close-up Shot",
+                    "prompt": "Keep the scene and characters unchanged, take a close-up shot with focus on the face, close-range photography",
                     "icon": "🔍",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_fullbody",
-                    "name": "全身鏡頭",
-                    "prompt": "畫面場景和人物都不要動, 拍攝全身鏡頭(full shot)",
+                    "name": "Full Body Shot",
+                    "prompt": "Keep the scene and characters unchanged, take a full body shot",
                     "icon": "🔎",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_topdown",
-                    "name": "俯視鏡頭",
-                    "prompt": "畫面場景和人物都不要動, 從上方角度俯視拍攝(high angle shot)，高角度視角",
+                    "name": "Top-down Shot",
+                    "prompt": "Keep the scene and characters unchanged, shoot from above with a high angle shot, elevated perspective",
                     "icon": "⬇️",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_bottomup",
-                    "name": "仰視鏡頭",
-                    "prompt": "畫面場景和人物都不要動, 從下方角度仰視拍攝(low angle shot)，低角度視角",
+                    "name": "Bottom-up Shot",
+                    "prompt": "Keep the scene and characters unchanged, shoot from below with a low angle shot, low perspective",
                     "icon": "⬆️",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_backview",
-                    "name": "背面鏡頭",
-                    "prompt": "畫面場景和人物都不要動, 從背後拍攝(back shot)",
+                    "name": "Back View Shot",
+                    "prompt": "Keep the scene and characters unchanged, shoot from behind",
                     "icon": "🔄",
                     "category_id": "angle"
                 },
                 {
                     "id": "angle_fly",
-                    "name": "空拍鏡頭",
-                    "prompt": "畫面場景和人物都不要動, 模擬無人機由上往下拍攝",
+                    "name": "Aerial Shot",
+                    "prompt": "Keep the scene and characters unchanged, simulate drone photography from above",
                     "icon": "🚁",
                     "category_id": "angle"
                 }
@@ -68,28 +68,28 @@
         },
         {
             "id": "expression",
-            "name": "表情",
+            "name": "Expression",
             "icon": "😊",
             "color": "orange",
             "commands": [
                 {
                     "id": "expr_smile",
-                    "name": "自然微笑",
-                    "prompt": "自然溫暖的微笑，親和力十足",
+                    "name": "Natural Smile",
+                    "prompt": "Natural warm smile with great charm",
                     "icon": "😄",
                     "category_id": "expression"
                 },
                 {
                     "id": "expr_laugh",
-                    "name": "開懷大笑",
-                    "prompt": "開懷大笑，充滿活力和喜悦",
+                    "name": "Big Laugh",
+                    "prompt": "Big laugh full of energy and joy",
                     "icon": "😆",
                     "category_id": "expression"
                 },
                 {
                     "id": "expr_confident",
-                    "name": "迷人",
-                    "prompt": "挑逗誘惑的表情，勾引攝影師",
+                    "name": "Alluring",
+                    "prompt": "Seductive and tempting expression, captivating the photographer",
                     "icon": "😏",
                     "category_id": "expression"
                 }
@@ -97,77 +97,77 @@
         },
         {
             "id": "pose",
-            "name": "姿勢",
+            "name": "Pose",
             "icon": "🤸",
             "color": "purple",
             "commands": [
                 {
                     "id": "pose_chin_up",
-                    "name": "下巴微抬",
-                    "prompt": "下巴微微抬起，拉長頸部線條，展現自信",
+                    "name": "Chin Up",
+                    "prompt": "Slightly lift the chin, lengthen the neck line, showing confidence",
                     "icon": "👆",
                     "category_id": "pose"
                 },
                 {
                     "id": "pose_facehold",
-                    "name": "雙手捧臉",
-                    "prompt": "雙手輕撫臉頰，溫柔動人",
+                    "name": "Hold Face",
+                    "prompt": "Gently hold the face with both hands, tender and touching",
                     "icon": "🤲",
                     "category_id": "pose"
                 },
                 {
                     "id": "pose_look_away",
-                    "name": "視線移開",
-                    "prompt": "視線自然移開鏡頭，創造神秘感和自然感",
+                    "name": "Look Away",
+                    "prompt": "Naturally look away from the camera, creating mystery and naturalness",
                     "icon": "👀",
                     "category_id": "pose"
                 },
                 {
                     "id": "pose_kiss_face",
-                    "name": "啾咪",
-                    "prompt": "做出啾咪的表情，可愛俏皮",
+                    "name": "Kiss Face",
+                    "prompt": "Make a kiss face expression, cute and playful",
                     "icon": "😘",
                     "category_id": "pose"
                 },
                 {
                     "id": "pose_heart_hands",
-                    "name": "比愛心",
-                    "prompt": "雙手比出愛心手勢，表達愛意",
+                    "name": "Heart Hands",
+                    "prompt": "Make a heart gesture with both hands, expressing love",
                     "icon": "💕",
                     "category_id": "pose"
                 },
                 {
                     "id": "pose_touch_face",
-                    "name": "手摸臉",
-                    "prompt": "一手輕撫臉頰，溫柔觸摸",
+                    "name": "Touch Face",
+                    "prompt": "Gently touch the face with one hand, tender touch",
                     "icon": "🤚",
                     "category_id": "pose"
                 },
                 {
                     "id": "pose_touch_hair",
-                    "name": "手摸頭髮",
-                    "prompt": "一手輕撫頭髮，展現柔美氣質",
+                    "name": "Touch Hair",
+                    "prompt": "Gently touch the hair with one hand, showing gentle charm",
                     "icon": "💇",
                     "category_id": "pose"
                 },
                 {
                     "id": "pose_touch_shoulder",
-                    "name": "手摸肩膀",
-                    "prompt": "一手輕撫肩膀，優雅自然",
+                    "name": "Touch Shoulder",
+                    "prompt": "Gently touch the shoulder with one hand, elegant and natural",
                     "icon": "🤲",
                     "category_id": "pose"
                 },
                 {
                     "id": "pose_touch_neck",
-                    "name": "手摸脖子",
-                    "prompt": "一手輕撫脖子，展現性感魅力",
+                    "name": "Touch Neck",
+                    "prompt": "Gently touch the neck with one hand, showing sexy charm",
                     "icon": "🤚",
                     "category_id": "pose"
                 },
                 {
                     "id": "pose_touch_arm",
-                    "name": "手摸手臂",
-                    "prompt": "一手輕撫手臂，溫柔撫摸",
+                    "name": "Touch Arm",
+                    "prompt": "Gently touch the arm with one hand, tender caress",
                     "icon": "🤲",
                     "category_id": "pose"
                 }
@@ -175,35 +175,35 @@
         },
         {
             "id": "environment",
-            "name": "環境",
+            "name": "Environment",
             "icon": "🌅",
             "color": "green",
             "commands": [
                 {
                     "id": "env_beach",
-                    "name": "海邊沙灘",
-                    "prompt": "拍攝主體不變,場景換成海邊或沙灘上，海洋風情",
+                    "name": "Beach",
+                    "prompt": "Keep the subject unchanged, change the scene to beach or seaside, ocean atmosphere",
                     "icon": "🏖️",
                     "category_id": "environment"
                 },
                 {
                     "id": "weather_rainy",
-                    "name": "雨天",
-                    "prompt": "場景不變，天氣變成雨天，增加雨滴效果和濕潤感",
+                    "name": "Rainy",
+                    "prompt": "Keep the scene unchanged, change the weather to rainy, add rain effects and wet atmosphere",
                     "icon": "🌧️",
                     "category_id": "weather"
                 },
                 {
                     "id": "weather_sunny",
-                    "name": "晴天",
-                    "prompt": "場景不變，天氣變成晴朗陽光，增加明亮光線和溫暖感",
+                    "name": "Sunny",
+                    "prompt": "Keep the scene unchanged, change the weather to sunny, add bright light and warm atmosphere",
                     "icon": "☀️",
                     "category_id": "weather"
                 },
                 {
                     "id": "weather_snowy",
-                    "name": "飄雪",
-                    "prompt": "場景不變，天氣變成飄雪，增加雪花效果和冬季氛圍",
+                    "name": "Snowy",
+                    "prompt": "Keep the scene unchanged, change the weather to snowy, add snow effects and winter atmosphere",
                     "icon": "❄️",
                     "category_id": "weather"
                 }
@@ -211,76 +211,75 @@
         },
         {
             "id": "adjustment",
-            "name": "調整",
+            "name": "Adjustment",
             "icon": "⚙️",
             "color": "blue",
             "commands": [
                 {
                     "id": "adj_color_correct",
-                    "name": "水攝修正",
-                    "prompt": "場景和人物都不變, 修正水下攝影的色偏問題，恢復自然色彩平衡，特別是藍綠色偏",
+                    "name": "Underwater Color Correction",
+                    "prompt": "Keep the scene and characters unchanged, correct underwater photography color cast, restore natural color balance, especially blue-green cast",
                     "icon": "🎨",
                     "category_id": "adjustment"
                 },
                 {
                     "id": "adj_motion_blur",
-                    "name": "動態模糊",
-                    "prompt": "增加動態模糊效果，營造運動感和速度感",
+                    "name": "Motion Blur",
+                    "prompt": "Add motion blur effect, create sense of movement and speed",
                     "icon": "💨",
                     "category_id": "adjustment"
                 },
                 {
                     "id": "adj_saturation",
-                    "name": "鮮豔",
-                    "prompt": "場景和人物都不變, 調整色彩飽和度，讓顏色更鮮豔或更柔和",
+                    "name": "Vibrant",
+                    "prompt": "Keep the scene and characters unchanged, adjust color saturation to make colors more vibrant or softer",
                     "icon": "🌈",
                     "category_id": "adjustment"
                 },
                 {
                     "id": "adj_remove_UI",
-                    "name": "移除文字",
-                    "prompt": "只留下照片",
+                    "name": "Remove Text",
+                    "prompt": "Keep only the photo",
+                    "icon": "🔍",
+                    "category_id": "adjustment"
+                },
+                {
+                    "id": "adj_animation",
+                    "name": "Anime Style",
+                    "prompt": "Transform into Japanese anime style",
                     "icon": "🔍",
                     "category_id": "adjustment"
                 }
-            },
-            {
-                "id": "adj_animation",
-                "name": "動畫化",
-                "prompt": "轉化為日本動畫風格",
-                "icon": "🔍",
-                "category_id": "adjustment"
-            }
-        ]
-    },
-    {
-        "id": "style",
-        "name": "風格",
-        "icon": "🎨",
-        "color": "pink",
-        "commands": [
-            {
-                "id": "style_vintage",
-                "name": "復古膠片",
-                "prompt": "場景和人物都不變, 變成復古膠片感，懷舊色調, 有瑕疵, 不完美的曝光，增加顆粒質感",
-                "icon": "🎞️",
-                "category_id": "style"
-            },
-            {
-                "id": "style_blackwhite",
-                "name": "經典黑白",
-                "prompt": "場景和人物都不變, 變成經典黑白照片",
-                "icon": "⚫",
-                "category_id": "style"
-            },
-            {
-                "id": "style_fashion",
-                "name": "時尚雜誌",
-                "prompt": "場景和人物都不變, 但是，變成時尚雜誌封面風格，看起來像是一本雜誌封面, 會有雜誌的logo文字",
-                "icon": "👗",
-                "category_id": "style"
-            }
-        ]
-    }
-]
+            ]
+        },
+        {
+            "id": "style",
+            "name": "Style",
+            "icon": "🎨",
+            "color": "pink",
+            "commands": [
+                {
+                    "id": "style_vintage",
+                    "name": "Vintage Film",
+                    "prompt": "Keep the scene and characters unchanged, transform into vintage film look, nostalgic tones, with imperfections, imperfect exposure, add grain texture",
+                    "icon": "🎞️",
+                    "category_id": "style"
+                },
+                {
+                    "id": "style_blackwhite",
+                    "name": "Classic B&W",
+                    "prompt": "Keep the scene and characters unchanged, transform into classic black and white photo",
+                    "icon": "⚫",
+                    "category_id": "style"
+                },
+                {
+                    "id": "style_fashion",
+                    "name": "Fashion Magazine",
+                    "prompt": "Keep the scene and characters unchanged, but transform into fashion magazine cover style, looking like a magazine cover with magazine logo text",
+                    "icon": "👗",
+                    "category_id": "style"
+                }
+            ]
+        }
+    ]
 }
