@@ -242,6 +242,13 @@
                     "prompt": "只留下照片",
                     "icon": "🔍",
                     "category_id": "adjustment"
+                }},
+                {
+                    "id": "adj_animation",
+                    "name": "動畫化",
+                    "prompt": "轉化為日本動畫風格",
+                    "icon": "🔍",
+                    "category_id": "adjustment"
                 }
             ]
         },
