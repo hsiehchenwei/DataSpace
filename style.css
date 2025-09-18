@@ -624,3 +624,117 @@ html {
   color: var(--earth-brown);
   text-decoration: underline;
 }
+
+/* Google Form 樣式 */
+.google-form-container {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  position: relative;
+}
+
+.form-header {
+  background: linear-gradient(135deg, var(--soft-blue), #4a8bc2);
+  color: var(--white);
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}
+
+.form-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(255, 255, 255, 0.1) 0%,
+    transparent 50%
+  );
+}
+
+.form-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.form-header h3 {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.form-header p {
+  opacity: 0.9;
+  font-size: 1.1rem;
+  position: relative;
+  z-index: 2;
+}
+
+.google-form-embed {
+  padding: 40px;
+  background: var(--white);
+}
+
+.google-form-embed iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-note {
+  background: var(--light-gray);
+  padding: 20px 40px;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+.form-note p {
+  margin: 0;
+  color: var(--dark-gray);
+  font-size: 0.95rem;
+}
+
+.form-note a {
+  color: var(--soft-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.form-note a:hover {
+  text-decoration: underline;
+}
+
+.contact-methods {
+  margin-top: 60px;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+  .google-form-embed {
+    padding: 20px;
+  }
+
+  .google-form-embed iframe {
+    height: 500px;
+  }
+
+  .form-header {
+    padding: 30px 20px;
+  }
+
+  .form-note {
+    padding: 15px 20px;
+  }
+}
