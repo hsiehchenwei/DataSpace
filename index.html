@@ -1,299 +1,701 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PhotoContinuum - AI照片延續 | 讓珍貴回憶延續無限可能</title>
-    <meta name="description" content="PhotoContinuum 使用Google Gemini AI模型，將珍貴照片延續出無限可能。完全隱私安全，本地處理，不上傳照片。適合紀念已逝親友，創造新的美好回憶。">
-    <meta name="keywords" content="AI照片編輯,照片延續,Google Gemini,AI生圖,照片生成,回憶延續,寵物照片,紀念照片,照片變化,AI藝術,隱私安全,本地處理">
+    <meta
+      name="description"
+      content="PhotoContinuum 使用Google Gemini AI模型，將珍貴照片延續出無限可能。完全隱私安全，本地處理，不上傳照片。適合紀念已逝親友，創造新的美好回憶。"
+    />
+    <meta
+      name="keywords"
+      content="AI照片編輯,照片延續,Google Gemini,AI生圖,照片生成,回憶延續,寵物照片,紀念照片,照片變化,AI藝術,隱私安全,本地處理"
+    />
 
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="PhotoContinuum - AI照片延續">
-    <meta property="og:description" content="用AI讓珍貴回憶延續無限可能">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="./images/app-preview.jpg">
+    <meta property="og:title" content="PhotoContinuum - AI照片延續" />
+    <meta property="og:description" content="用AI讓珍貴回憶延續無限可能" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/app-preview.jpg" />
 
     <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/app-icon-180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/app-icon-180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Preload critical resources -->
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="script.js" as="script">
-</head>
-<body class="loading">
+    <link rel="preload" href="style.css" as="style" />
+    <link rel="preload" href="script.js" as="script" />
+  </head>
+  <body class="loading">
     <!-- 導航欄 -->
     <nav class="navbar">
-        <div class="container">
-            <div class="nav-content">
-                <a href="#" class="logo">PhotoContinuum</a>
-                <div class="language-switch">
-                    <a href="#" class="active" data-lang="zh">中文</a>
-                    <a href="index-en.html" data-lang="en">English</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="nav-content">
+          <a href="#" class="logo">PhotoContinuum</a>
+          <div class="language-switch">
+            <a href="#" class="active" data-lang="zh">中文</a>
+            <a href="index-en.html" data-lang="en">English</a>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- 主標題區塊 -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="app-icon">📸</div>
-                <h1>PhotoContinuum</h1>
-                <p class="subtitle">用AI讓珍貴回憶延續無限可能</p>
-                <a href="#" class="download-button" onclick="trackDownload('hero')">
-                    <span>📱</span>
-                    App Store 下載
-                </a>
-            </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="app-icon">📸</div>
+          <h1>PhotoContinuum</h1>
+          <p class="subtitle">用AI讓珍貴回憶延續無限可能</p>
+          <a href="#" class="download-button" onclick="trackDownload('hero')">
+            <span>📱</span>
+            App Store 下載
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- 核心特色 -->
     <section class="section">
-        <div class="container">
-            <h2 class="section-title">核心特色</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">✨</div>
-                    <h3>AI智慧延續</h3>
-                    <p>採用Google Gemini先進AI模型，根據您的靈感描述，創造千變萬化的新照片，保持人物或寵物特徵的一致性。支援語音和文字雙重輸入方式。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>完全隱私安全</h3>
-                    <p>所有照片處理完全在本地裝置進行，不會上傳、儲存或分享任何個人照片。您的珍貴回憶完全掌控在自己手中，符合最高隱私保護標準。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>透明費用結構</h3>
-                    <p>應用程式本身完全免費下載使用。使用者自行提供Google Gemini API金鑰，直接向Google支付AI模型使用費用，沒有隱藏費用或額外收費。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>簡潔優雅設計</h3>
-                    <p>溫暖的相框美學設計，極簡操作流程，專注於創作本身。奶油色調和大地色系，營造溫馨感受，直覺化的拖放上傳功能。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💝</div>
-                    <h3>情感價值</h3>
-                    <p>為已逝親友創造新的美好瞬間，探索寵物在不同情境下的可愛模樣。讓珍貴照片延續出無限想像空間，每一張生成的照片都承載著愛與思念。</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>簡單易用</h3>
-                    <p>只需五個步驟：上傳照片、描述創意、AI處理、對比查看、儲存結果。無需複雜設定，任何人都能輕鬆使用，立即創造美好回憶。</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">核心特色</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">✨</div>
+            <h3>AI智慧延續</h3>
+            <p>
+              採用Google
+              Gemini先進AI模型，根據您的靈感描述，創造千變萬化的新照片，保持人物或寵物特徵的一致性。支援語音和文字雙重輸入方式。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <h3>完全隱私安全</h3>
+            <p>
+              所有照片處理完全在本地裝置進行，不會上傳、儲存或分享任何個人照片。您的珍貴回憶完全掌控在自己手中，符合最高隱私保護標準。
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💰</div>
+            <h3>透明費用結構</h3>
+            <p>
+              使用者自行提供Google Gemini
+              API金鑰，直接向Google支付AI模型使用費用，沒有隱藏費用或額外收費。
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 使用方式 -->
     <section class="section">
-        <div class="container">
-            <h2 class="section-title">使用方式</h2>
-            <div class="steps-container">
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <h3>上傳照片</h3>
-                    <p>選擇您的珍貴照片，支援 JPEG、PNG、HEIC 格式，拖放上傳或點擊選擇。</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <h3>描述創意</h3>
-                    <p>用語音或文字描述您的創意想法，告訴AI您想要看到什麼樣的新場景。</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <h3>AI智慧處理</h3>
-                    <p>Google Gemini AI模型分析您的照片和描述，智慧生成延續的新影像。</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">4</div>
-                    <h3>對比查看</h3>
-                    <p>原始照片與AI生成的延續影像並列顯示，讓您清楚看到延續的效果。</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">5</div>
-                    <h3>儲存結果</h3>
-                    <p>滿意的結果一鍵儲存到您的相簿，高畫質 PNG 格式，隨時分享珍貴回憶。</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">使用方式</h2>
+        <div class="steps-container">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <h3>上傳照片</h3>
+            <p>
+              選擇您的珍貴照片，支援 JPEG、PNG、HEIC 格式，拖放上傳或點擊選擇。
+            </p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <h3>描述創意</h3>
+            <p>
+              用語音或文字描述您的創意想法，告訴AI您想要看到什麼樣的新場景。
+            </p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <h3>AI智慧處理</h3>
+            <p>
+              Google Gemini AI模型分析您的照片和描述，智慧生成延續的新影像。
+            </p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">4</div>
+            <h3>對比查看</h3>
+            <p>原始照片與AI生成的延續影像並列顯示，讓您清楚看到延續的效果。</p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">5</div>
+            <h3>儲存結果</h3>
+            <p>
+              滿意的結果一鍵儲存到您的相簿，高畫質 PNG 格式，隨時分享珍貴回憶。
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 隱私保護 -->
     <section class="section">
-        <div class="container">
-            <div class="privacy-section">
-                <div class="privacy-icon">🛡️</div>
-                <h2>隱私保護承諾</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.8;">您的隱私是我們最重視的核心價值</p>
+      <div class="container">
+        <div class="privacy-section">
+          <div class="privacy-icon">🛡️</div>
+          <h2>隱私保護承諾</h2>
+          <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.8">
+            您的隱私是我們最重視的核心價值
+          </p>
 
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px;">
-                    <div style="text-align: center; padding: 20px;">
-                        <h3 style="color: #6B5B47; margin-bottom: 15px;">零資料收集</h3>
-                        <p>我們不會收集、儲存或處理任何個人識別資訊</p>
-                    </div>
-                    <div style="text-align: center; padding: 20px;">
-                        <h3 style="color: #6B5B47; margin-bottom: 15px;">本地處理</h3>
-                        <p>所有照片僅在您的裝置本地處理，從不上傳至我們的伺服器</p>
-                    </div>
-                    <div style="text-align: center; padding: 20px;">
-                        <h3 style="color: #6B5B47; margin-bottom: 15px;">安全儲存</h3>
-                        <p>API金鑰安全儲存在裝置的系統鑰匙串中，完全保護您的隱私</p>
-                    </div>
-                </div>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              gap: 30px;
+              margin-top: 40px;
+            "
+          >
+            <div style="text-align: center; padding: 20px">
+              <h3 style="color: #6b5b47; margin-bottom: 15px">零資料收集</h3>
+              <p>我們不會收集、儲存或處理任何個人識別資訊</p>
             </div>
+            <div style="text-align: center; padding: 20px">
+              <h3 style="color: #6b5b47; margin-bottom: 15px">本地處理</h3>
+              <p>所有照片僅在您的裝置本地處理，從不上傳至我們的伺服器</p>
+            </div>
+            <div style="text-align: center; padding: 20px">
+              <h3 style="color: #6b5b47; margin-bottom: 15px">安全儲存</h3>
+              <p>API金鑰安全儲存在裝置的系統鑰匙串中，完全保護您的隱私</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 系統需求 -->
-    <section class="section" style="background: var(--white);">
-        <div class="container">
-            <h2 class="section-title">系統需求</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 60px;">
-                <div style="text-align: center; padding: 30px; background: var(--primary-cream); border-radius: var(--border-radius);">
-                    <div style="font-size: 3rem; margin-bottom: 20px;">📱</div>
-                    <h3 style="color: var(--earth-brown); margin-bottom: 15px;">iOS 裝置</h3>
-                    <p>需要 iOS 15.0 或更高版本<br>支援 iPhone 和 iPad</p>
-                </div>
-                <div style="text-align: center; padding: 30px; background: var(--primary-cream); border-radius: var(--border-radius);">
-                    <div style="font-size: 3rem; margin-bottom: 20px;">🔑</div>
-                    <h3 style="color: var(--earth-brown); margin-bottom: 15px;">API 金鑰</h3>
-                    <p>需要 Google Gemini API 金鑰<br>免費註冊即可獲得</p>
-                </div>
-                <div style="text-align: center; padding: 30px; background: var(--primary-cream); border-radius: var(--border-radius);">
-                    <div style="font-size: 3rem; margin-bottom: 20px;">🌐</div>
-                    <h3 style="color: var(--earth-brown); margin-bottom: 15px;">網路連線</h3>
-                    <p>需要穩定的網際網路連線<br>用於 AI 模型呼叫</p>
-                </div>
-            </div>
+    <section class="section" style="background: var(--white)">
+      <div class="container">
+        <h2 class="section-title">系統需求</h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+          "
+        >
+          <div
+            style="
+              text-align: center;
+              padding: 30px;
+              background: var(--primary-cream);
+              border-radius: var(--border-radius);
+            "
+          >
+            <div style="font-size: 3rem; margin-bottom: 20px">📱</div>
+            <h3 style="color: var(--earth-brown); margin-bottom: 15px">
+              iOS 裝置
+            </h3>
+            <p>需要 iOS 15.0 或更高版本<br />支援 iPhone 和 iPad</p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              padding: 30px;
+              background: var(--primary-cream);
+              border-radius: var(--border-radius);
+            "
+          >
+            <div style="font-size: 3rem; margin-bottom: 20px">🔑</div>
+            <h3 style="color: var(--earth-brown); margin-bottom: 15px">
+              API 金鑰
+            </h3>
+            <p>需要 Google Gemini API 金鑰<br />免費註冊即可獲得</p>
+          </div>
+          <div
+            style="
+              text-align: center;
+              padding: 30px;
+              background: var(--primary-cream);
+              border-radius: var(--border-radius);
+            "
+          >
+            <div style="font-size: 3rem; margin-bottom: 20px">🌐</div>
+            <h3 style="color: var(--earth-brown); margin-bottom: 15px">
+              網路連線
+            </h3>
+            <p>需要穩定的網際網路連線<br />用於 AI 模型呼叫</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- API 設定指引 -->
     <section class="section">
-        <div class="container">
-            <h2 class="section-title">API 金鑰設定指引</h2>
-            <div class="steps-container">
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <h3>前往 Google AI Studio</h3>
-                    <p>訪問 aistudio.google.com，使用您的 Google 帳號登入。</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <h3>建立 API 金鑰</h3>
-                    <p>在控制台中建立新的 API 金鑰，複製並安全保存。</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <h3>輸入應用程式</h3>
-                    <p>在 PhotoContinuum 中輸入您的 API 金鑰，系統會安全儲存。</p>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">4</div>
-                    <h3>開始創作</h3>
-                    <p>設定完成！現在您可以開始享受 AI 照片延續的魅力。</p>
-                </div>
-            </div>
+      <div class="container">
+        <h2 class="section-title">API 金鑰設定指引</h2>
+        <div class="steps-container">
+          <div class="step-item">
+            <div class="step-number">1</div>
+            <h3>前往 Google AI Studio</h3>
+            <p>
+              訪問
+              <a
+                href="https://aistudio.google.com/apikey"
+                target="_blank"
+                style="color: var(--soft-blue); font-weight: 600"
+                >aistudio.google.com/apikey</a
+              >，使用您的 Google 帳號登入。
+            </p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">2</div>
+            <h3>建立 API 金鑰</h3>
+            <p>
+              在控制台中建立新的 API
+              金鑰，複製並安全保存。請確保金鑰權限設定正確。
+            </p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">3</div>
+            <h3>設定付款方式</h3>
+            <p>
+              在 Google Cloud Console 中設定信用卡付款資訊。這是使用 API
+              的必要步驟，Google 會根據實際使用量收費。
+            </p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">4</div>
+            <h3>輸入應用程式</h3>
+            <p>
+              在 PhotoContinuum 中輸入您的 API
+              金鑰，系統會安全儲存在裝置的鑰匙串中。
+            </p>
+          </div>
+          <div class="step-item">
+            <div class="step-number">5</div>
+            <h3>開始創作</h3>
+            <p>
+              設定完成！現在您可以開始享受 AI 照片延續的魅力。首次使用時，Google
+              提供免費額度供您體驗。
+            </p>
+          </div>
         </div>
+
+        <!-- 重要提醒區塊 -->
+        <div
+          style="
+            background: linear-gradient(135deg, #fff3cd, #fef7e0);
+            border: 2px solid #ffc107;
+            border-radius: var(--border-radius);
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+          "
+        >
+          <div style="font-size: 2rem; margin-bottom: 15px">⚠️</div>
+          <h3
+            style="
+              color: var(--earth-brown);
+              margin-bottom: 15px;
+              font-family: var(--font-serif);
+            "
+          >
+            重要提醒
+          </h3>
+          <p
+            style="
+              color: var(--earth-brown);
+              font-weight: 600;
+              margin-bottom: 10px;
+            "
+          >
+            申請 API 金鑰的三個關鍵步驟：
+          </p>
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+              gap: 20px;
+              margin-top: 20px;
+            "
+          >
+            <div
+              style="
+                background: var(--white);
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <strong>1. Google 帳號登入</strong>
+            </div>
+            <div
+              style="
+                background: var(--white);
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <strong>2. 申請 API 金鑰</strong>
+            </div>
+            <div
+              style="
+                background: var(--white);
+                padding: 15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <strong>3. 信用卡付款</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 技術支援與客服 -->
+    <section class="section" style="background: var(--white)">
+      <div class="container">
+        <h2 class="section-title">技術支援與客服</h2>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+          "
+        >
+          <div
+            style="
+              text-align: center;
+              padding: 40px 30px;
+              background: var(--primary-cream);
+              border-radius: var(--border-radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <div style="font-size: 3rem; margin-bottom: 20px">📧</div>
+            <h3
+              style="
+                color: var(--earth-brown);
+                margin-bottom: 15px;
+                font-family: var(--font-serif);
+              "
+            >
+              客服電子信箱
+            </h3>
+            <p style="margin-bottom: 20px; opacity: 0.8">
+              如有任何問題或建議，歡迎隨時聯繫我們
+            </p>
+            <a
+              href="mailto:cinches_drives1a@icloud.com"
+              style="
+                color: var(--soft-blue);
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 1.1rem;
+              "
+              >cinches_drives1a@icloud.com</a
+            >
+          </div>
+          <div
+            style="
+              text-align: center;
+              padding: 40px 30px;
+              background: var(--primary-cream);
+              border-radius: var(--border-radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <div style="font-size: 3rem; margin-bottom: 20px">🔧</div>
+            <h3
+              style="
+                color: var(--earth-brown);
+                margin-bottom: 15px;
+                font-family: var(--font-serif);
+              "
+            >
+              API 申請支援
+            </h3>
+            <p style="margin-bottom: 20px; opacity: 0.8">
+              需要協助申請 Google Gemini API 金鑰？
+            </p>
+            <a
+              href="https://aistudio.google.com/apikey"
+              target="_blank"
+              style="
+                color: var(--soft-blue);
+                font-weight: 600;
+                text-decoration: none;
+                font-size: 1.1rem;
+              "
+              >前往申請頁面</a
+            >
+          </div>
+          <div
+            style="
+              text-align: center;
+              padding: 40px 30px;
+              background: var(--primary-cream);
+              border-radius: var(--border-radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <div style="font-size: 3rem; margin-bottom: 20px">💳</div>
+            <h3
+              style="
+                color: var(--earth-brown);
+                margin-bottom: 15px;
+                font-family: var(--font-serif);
+              "
+            >
+              付款方式
+            </h3>
+            <p style="margin-bottom: 20px; opacity: 0.8">
+              使用信用卡直接向 Google 付款
+            </p>
+            <p style="color: var(--earth-brown); font-weight: 600">
+              安全便捷的付款流程
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 常見問題 -->
-    <section class="section" style="background: var(--light-gray);">
-        <div class="container">
-            <h2 class="section-title">常見問題</h2>
-            <div style="display: grid; gap: 30px; margin-top: 60px; max-width: 800px; margin-left: auto; margin-right: auto;">
-                <div style="background: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-                    <h3 style="color: var(--earth-brown); margin-bottom: 15px; font-family: var(--font-serif);">為什麼需要提供自己的API金鑰？</h3>
-                    <p>這確保了完全的透明度和隱私保護，您直接控制所有AI處理費用和資料流向。我們無法存取您的任何資料或照片。</p>
-                </div>
-                <div style="background: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-                    <h3 style="color: var(--earth-brown); margin-bottom: 15px; font-family: var(--font-serif);">我的照片會被儲存在雲端嗎？</h3>
-                    <p>絕對不會。所有照片處理都在您的裝置本地進行，我們無法存取您的任何照片。您的隱私和資料安全是我們的最高優先。</p>
-                </div>
-                <div style="background: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-                    <h3 style="color: var(--earth-brown); margin-bottom: 15px; font-family: var(--font-serif);">使用費用如何計算？</h3>
-                    <p>應用程式完全免費，您只需支付直接向Google使用AI模型的費用，通常每次處理約$0.01-0.05美元，非常經濟實惠。</p>
-                </div>
-                <div style="background: var(--white); padding: 30px; border-radius: var(--border-radius); box-shadow: var(--shadow);">
-                    <h3 style="color: var(--earth-brown); margin-bottom: 15px; font-family: var(--font-serif);">支援哪些圖片格式？</h3>
-                    <p>支援 JPEG、PNG、HEIC 等常見格式。應用程式會自動最佳化圖片尺寸和品質，確保最佳的AI處理效果。</p>
-                </div>
-            </div>
+    <section class="section" style="background: var(--light-gray)">
+      <div class="container">
+        <h2 class="section-title">常見問題</h2>
+        <div
+          style="
+            display: grid;
+            gap: 30px;
+            margin-top: 60px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        >
+          <div
+            style="
+              background: var(--white);
+              padding: 30px;
+              border-radius: var(--border-radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <h3
+              style="
+                color: var(--earth-brown);
+                margin-bottom: 15px;
+                font-family: var(--font-serif);
+              "
+            >
+              為什麼無法生成圖片？
+            </h3>
+            <p>
+              無法生成圖片是因為違反了 Gemini
+              生圖規定。這個規定讓大家更安全，不會被惡意照片干擾。請確保您的描述內容符合
+              Google 的使用政策。
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              padding: 30px;
+              border-radius: var(--border-radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <h3
+              style="
+                color: var(--earth-brown);
+                margin-bottom: 15px;
+                font-family: var(--font-serif);
+              "
+            >
+              使用安全嗎？完全隱私嗎？
+            </h3>
+            <p>
+              完全安全且完全隱私。App
+              完全隱私，沒有留任何資料。所有照片處理都在您的裝置本地進行，我們無法存取您的任何照片或個人資料。
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              padding: 30px;
+              border-radius: var(--border-radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <h3
+              style="
+                color: var(--earth-brown);
+                margin-bottom: 15px;
+                font-family: var(--font-serif);
+              "
+            >
+              免費嗎？
+            </h3>
+            <p>
+              目前 Gemini 有免費額度，您只需支付直接向 Google 使用 AI
+              模型的費用，通常每次處理約 $0.01-0.05 美元。
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              padding: 30px;
+              border-radius: var(--border-radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <h3
+              style="
+                color: var(--earth-brown);
+                margin-bottom: 15px;
+                font-family: var(--font-serif);
+              "
+            >
+              如何申請 Gemini API 金鑰？
+            </h3>
+            <p>
+              前往
+              <a
+                href="https://aistudio.google.com/apikey"
+                target="_blank"
+                style="color: var(--soft-blue)"
+                >aistudio.google.com/apikey</a
+              >，使用 Google 帳號登入，申請 API 金鑰，並設定信用卡付款。重點是
+              Google 帳號登入、申請 API 金鑰、信用卡付款。
+            </p>
+          </div>
+          <div
+            style="
+              background: var(--white);
+              padding: 30px;
+              border-radius: var(--border-radius);
+              box-shadow: var(--shadow);
+            "
+          >
+            <h3
+              style="
+                color: var(--earth-brown);
+                margin-bottom: 15px;
+                font-family: var(--font-serif);
+              "
+            >
+              支援哪些圖片格式？
+            </h3>
+            <p>
+              支援 JPEG、PNG、HEIC
+              等常見格式。應用程式會自動最佳化圖片尺寸和品質，確保最佳的 AI
+              處理效果。
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- 下載呼籲 -->
     <section class="section">
-        <div class="container" style="text-align: center;">
-            <h2 class="section-title">立即開始您的回憶延續之旅</h2>
-            <p style="font-size: 1.3rem; margin-bottom: 40px; opacity: 0.8;">讓PhotoContinuum陪伴您，將每一份珍貴回憶延續成永恆的美好時光</p>
-            <a href="#" class="download-button pulse" onclick="trackDownload('footer')" style="font-size: 1.2rem; padding: 18px 35px;">
-                <span style="font-size: 1.5rem;">📱</span>
-                免費下載 PhotoContinuum
-            </a>
-            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.6;">適用於 iOS 15.0 或更高版本</p>
-        </div>
+      <div class="container" style="text-align: center">
+        <h2 class="section-title">立即開始您的回憶延續之旅</h2>
+        <p style="font-size: 1.3rem; margin-bottom: 40px; opacity: 0.8">
+          讓PhotoContinuum陪伴您，將每一份珍貴回憶延續成永恆的美好時光
+        </p>
+        <a
+          href="#"
+          class="download-button pulse"
+          onclick="trackDownload('footer')"
+          style="font-size: 1.2rem; padding: 18px 35px"
+        >
+          <span style="font-size: 1.5rem">📱</span>
+          免費下載 PhotoContinuum
+        </a>
+        <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.6">
+          適用於 iOS 15.0 或更高版本
+        </p>
+      </div>
     </section>
 
     <!-- 頁尾 -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>PhotoContinuum</h3>
-                    <p style="opacity: 0.8; line-height: 1.8;">用AI讓珍貴回憶延續無限可能。專為珍惜回憶的您而設計，讓每一張照片都充滿無限想像空間。</p>
-                </div>
-                <div class="footer-section">
-                    <h3>產品特色</h3>
-                    <ul>
-                        <li><a href="#features">AI智慧延續</a></li>
-                        <li><a href="#privacy">隱私保護</a></li>
-                        <li><a href="#pricing">透明費用</a></li>
-                        <li><a href="#design">優雅設計</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>支援資源</h3>
-                    <ul>
-                        <li><a href="#setup">API設定指引</a></li>
-                        <li><a href="#faq">常見問題</a></li>
-                        <li><a href="#requirements">系統需求</a></li>
-                        <li><a href="#contact">技術支援</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h3>語言版本</h3>
-                    <ul>
-                        <li><a href="index.html" class="active">繁體中文</a></li>
-                        <li><a href="index-en.html">English</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>&copy; 2024 PhotoContinuum. 讓珍貴回憶延續無限可能。</p>
-                <p style="margin-top: 10px; font-size: 0.9rem;">Privacy First • AI Powered • Made with ❤️</p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>PhotoContinuum</h3>
+            <p style="opacity: 0.8; line-height: 1.8">
+              用AI讓珍貴回憶延續無限可能。專為珍惜回憶的您而設計，讓每一張照片都充滿無限想像空間。
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>產品特色</h3>
+            <ul>
+              <li><a href="#features">AI智慧延續</a></li>
+              <li><a href="#privacy">隱私保護</a></li>
+              <li><a href="#pricing">透明費用</a></li>
+              <li><a href="#design">優雅設計</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>支援資源</h3>
+            <ul>
+              <li><a href="#setup">API設定指引</a></li>
+              <li><a href="#faq">常見問題</a></li>
+              <li><a href="#requirements">系統需求</a></li>
+              <li><a href="mailto:cinches_drives1a@icloud.com">技術支援</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>聯絡我們</h3>
+            <p style="opacity: 0.8; line-height: 1.8; margin-bottom: 15px">
+              如有任何問題，歡迎聯繫我們的客服團隊
+            </p>
+            <p style="color: var(--warm-gold); font-weight: 600">
+              📧 cinches_drives1a@icloud.com
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3>語言版本</h3>
+            <ul>
+              <li><a href="index.html" class="active">繁體中文</a></li>
+              <li><a href="index-en.html">English</a></li>
+            </ul>
+          </div>
         </div>
+        <div class="copyright">
+          <p>&copy; 2024 PhotoContinuum. 讓珍貴回憶延續無限可能。</p>
+          <p style="margin-top: 10px; font-size: 0.9rem">
+            Privacy First • AI Powered • Made with ❤️
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- JavaScript -->
     <script src="script.js"></script>
 
     <!-- Google Analytics (替換為實際的追蹤ID) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_TRACKING_ID');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "GA_TRACKING_ID");
     </script>
-</body>
+  </body>
 </html>
